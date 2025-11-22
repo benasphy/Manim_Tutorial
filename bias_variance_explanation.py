@@ -59,7 +59,7 @@ class BiasVarianceExplanation(Scene):
         y_label = Text("Error", font_size=24).next_to(axes.y_axis.get_top(), UP, buff=0.18)
         self.play(Create(axes), FadeIn(x_label), FadeIn(y_label))
 
-        # Bias^2: Exponential decay (full range)
+        # Bias^2: Exponential decay(full range)
         bias_curve = axes.plot(lambda x: 1.5 * np.exp(-0.35*x) + 0.18, color=YELLOW, x_range=[0, 10], stroke_width=4)
         # Variance: Exponential growth (stop at label)
         variance_curve = axes.plot(lambda x: 0.12 * np.exp(0.42*x) - 0.13, color=BLUE, x_range=[0, 8.5], stroke_width=4)
