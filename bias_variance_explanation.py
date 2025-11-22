@@ -42,7 +42,7 @@ class BiasVarianceExplanation(Scene):
         self.wait(2)
         self.play(FadeOut(tradeoff_title), FadeOut(tradeoff_text))
 
-        # Clean, professional Bias-Variance Tradeoff chart
+        # Clean,  Bias-Variance Tradeoff chart
         graph_title = Text("Bias-Variance Tradeoff", font_size=32, color=GREEN).next_to(title, DOWN, buff=0.5)
         self.play(FadeIn(graph_title))
         self.wait(0.5)
